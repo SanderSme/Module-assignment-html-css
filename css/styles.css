@@ -70,6 +70,11 @@ body {
   cursor: pointer;
 }
 
+.store-menu-label:hover {
+  text-decoration: underline;
+  color: #7a778c;
+}
+
 #store-menu {
   display: none;
 }
@@ -91,6 +96,11 @@ body {
   margin-left: 3em;
   color: #000;
   text-decoration: none;
+}
+
+.header-section > a:hover {
+  color: #7a778c;
+  text-decoration: underline;
 }
 
 .hero-banner {
