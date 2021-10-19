@@ -5,7 +5,6 @@ body {
 
 * {
   font-family: "Exo 2", sans-serif;
-  font-weight: 500;
 }
 
 .section {
@@ -110,6 +109,15 @@ body {
   background-position: center;
 }
 
+.big-logo {
+  height: 293px;
+  width: 390px;
+  background-color: #c4c4c4;
+  border-radius: 110%;
+  opacity: 0.4;
+  position: absolute;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -120,8 +128,6 @@ body {
   height: 255px;
   width: 255px;
   margin-top: 151px;
-
-  background-color: crimson;
 }
 
 .button {
@@ -138,7 +144,42 @@ body {
 .community {
   height: 600px;
   width: 100%;
-  background-color: brown;
+  background-image: url(/Images/Community.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-background {
+  background-color: #333;
+  width: 181px;
+  height: 41px;
+  opacity: 0.6;
+  position: relative;
+  top: 20em;
+  left: 15em;
+}
+
+.community-header {
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  justify-content: center;
+}
+
+.text-background {
+  background-color: #333;
+  width: 500px;
+  height: 70px;
+  opacity: 0.6;
+  position: relative;
+  top: 25em;
+  left: 15em;
+}
+
+.community-text {
+  color: #fff;
+  width: 450px;
+  position: absolute;
 }
 
 .carusel {
