@@ -10,7 +10,7 @@ body {
 .section {
   background-color: #f2f2f2;
   margin: 0px auto;
-  max-width: 1110px;
+  max-width: 390px;
 }
 
 .header {
@@ -105,29 +105,28 @@ body {
 .hero-banner {
   height: 420px;
   width: 100%;
-  background-image: url(/Images/hero-banner.png);
+  background-image: url(/Images/Hero-banner-app.png);
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
 .big-logo {
-  height: 293px;
-  width: 390px;
+  height: 153px;
+  width: 203px;
   background-color: #c4c4c4;
   border-radius: 110%;
   opacity: 0.4;
-  position: absolute;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .genre {
-  height: 255px;
-  width: 255px;
+  height: 117px;
+  width: 117px;
   margin-top: 151px;
 }
 
@@ -145,7 +144,7 @@ body {
 .community {
   height: 600px;
   width: 100%;
-  background-image: url(/Images/Community.png);
+  background-image: url(/Images/Community-app.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -195,15 +194,19 @@ body {
   height: 243px;
   width: 190px;
   margin-top: 79px;
-  background-color: darkcyan;
 }
 
 .footer {
-  height: 286px;
+  height: 570px;
   width: 100%;
   margin-top: 125px;
   border: 1px solid #666;
   background-color: #e5e5e5;
+}
+
+.footer-links li {
+  list-style-type: none;
+  color: #333;
 }
 
 @media screen and (min-width: 767px) {
@@ -218,6 +221,11 @@ body {
 
   .section {
     background-color: #f2f2f2;
+    margin: 0px auto;
+    max-width: 1110px;
+  }
+
+  .section2 {
     margin: 0px auto;
     max-width: 1110px;
   }
@@ -316,7 +324,6 @@ body {
     width: 100%;
     background-image: url(/Images/hero-banner.png);
     background-position: center;
-    position: relative;
   }
 
   .big-logo {
@@ -325,7 +332,6 @@ body {
     background-color: #c4c4c4;
     border-radius: 110%;
     opacity: 0.4;
-    position: absolute;
   }
 
   .container {
@@ -404,7 +410,6 @@ body {
     height: 243px;
     width: 190px;
     margin-top: 79px;
-    background-color: darkcyan;
   }
 
   .footer {
