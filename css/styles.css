@@ -5,12 +5,17 @@ body {
 
 * {
   font-family: "Exo 2", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #1d2540;
 }
 
 .section {
   background-color: #f2f2f2;
-  margin: 0px auto;
   max-width: 390px;
+  padding: 0 0.5em;
 }
 
 .header {
@@ -20,12 +25,12 @@ body {
 }
 
 .header-content {
-  max-width: 1110px;
-  margin: 0px auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .header-section {
@@ -33,11 +38,46 @@ body {
   flex-direction: row;
 }
 
+.search-mobile {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0.2rem;
+  width: 100%;
+  margin-left: -1rem;
+}
+
+.search-mobile input {
+  width: 100%;
+  font-size: 1em;
+  border: none;
+  padding: 0.5rem;
+}
+
+#search-icon {
+  display: none;
+}
+
+.mobile-only {
+  display: flex;
+}
+
+#search-icon:checked ~ .search-mobile {
+  display: flex;
+}
+
+.desktop-only {
+  display: none;
+}
+
 .dropdown {
   position: relative;
 }
 
 .dropdown-menu {
+  z-index: 1000;
   position: absolute;
   display: none;
   list-style-type: none;
@@ -85,6 +125,7 @@ body {
 .logo img {
   height: 40px;
   margin-top: 4px;
+  margin-left: 3.5rem;
 }
 
 .cart {
@@ -103,19 +144,38 @@ body {
 }
 
 .hero-banner {
-  height: 420px;
+  height: 276px;
   width: 100%;
   background-image: url(/Images/Hero-banner-app.png);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  height: 153px;
+  width: 203px;
+  background-color: #fff;
+  border-radius: 110%;
+  opacity: 0.5;
+  position: absolute;
 }
 
 .big-logo {
-  height: 153px;
-  width: 203px;
-  background-color: #c4c4c4;
-  border-radius: 110%;
-  opacity: 0.4;
+  z-index: 10;
+  height: 113px;
+}
+
+.main-title {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #33333370;
 }
 
 .container {
@@ -125,61 +185,69 @@ body {
 }
 
 .genre {
-  height: 117px;
-  width: 117px;
-  margin-top: 151px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.button {
-  height: 72px;
-  width: 148px;
-  margin-top: 98px;
-  margin-bottom: 57px;
-  margin-left: 54px;
-  margin-right: 54px;
+.genre-image {
+  width: 50%;
+}
+
+.genre-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.genre-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.genre-button {
+  padding: 1.5rem;
   border-radius: 23px;
-  background-color: aquamarine;
+  background-color: #1d2540;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2rem;
 }
 
 .community {
-  height: 600px;
+  margin-top: 2rem;
+  height: 233px;
   width: 100%;
   background-image: url(/Images/Community-app.png);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.header-background {
-  background-color: #333;
-  width: 181px;
-  height: 41px;
-  opacity: 0.6;
-  position: relative;
-  top: 20em;
-  left: 15em;
+  background-size: cover;
 }
 
 .community-header {
   color: #fff;
   font-weight: 700;
-  position: absolute;
-  justify-content: center;
-}
-
-.text-background {
-  background-color: #333;
-  width: 500px;
-  height: 70px;
-  opacity: 0.6;
-  position: relative;
-  top: 25em;
-  left: 15em;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  background-color: #33333380;
+  padding: 0.25rem 0.5rem;
 }
 
 .community-text {
   color: #fff;
-  width: 450px;
-  position: absolute;
+  margin-top: 0;
+  background-color: #33333380;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+}
+
+.community-content {
+  height: 100%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
 }
 
 .carusel {
@@ -197,11 +265,11 @@ body {
 }
 
 .footer {
-  height: 570px;
   width: 100%;
   margin-top: 125px;
-  border: 1px solid #666;
+  border-top: 1px solid #666;
   background-color: #e5e5e5;
+  padding: 1rem;
 }
 
 .footer-links li {
@@ -209,20 +277,16 @@ body {
   color: #333;
 }
 
+.footer-links {
+  padding: 0;
+}
+
 @media screen and (min-width: 767px) {
-  body {
-    margin: 0;
-    background-color: #f2f2f2;
-  }
-
-  * {
-    font-family: "Exo 2", sans-serif;
-  }
-
   .section {
     background-color: #f2f2f2;
     margin: 0px auto;
     max-width: 1110px;
+    padding: 0;
   }
 
   .section2 {
@@ -243,11 +307,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
 
   .header-section {
     display: flex;
     flex-direction: row;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
   }
 
   .dropdown {
@@ -302,6 +375,7 @@ body {
   .logo img {
     height: 40px;
     margin-top: 4px;
+    margin-left: 0;
   }
 
   .cart {
@@ -321,17 +395,22 @@ body {
 
   .hero-banner {
     height: 420px;
-    width: 100%;
     background-image: url(/Images/hero-banner.png);
-    background-position: center;
+  }
+
+  .overlay {
+    height: 293px;
+    width: 390px;
   }
 
   .big-logo {
-    height: 293px;
-    width: 390px;
-    background-color: #c4c4c4;
-    border-radius: 110%;
-    opacity: 0.4;
+    height: 217px;
+  }
+
+  .main-title {
+    margin-top: 58px;
+    text-align: left;
+    font-size: 2.4rem;
   }
 
   .container {
@@ -341,61 +420,35 @@ body {
   }
 
   .genre {
-    height: 255px;
-    width: 255px;
-    margin-top: 151px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .button {
-    height: 72px;
-    width: 148px;
-    margin-top: 98px;
-    margin-bottom: 57px;
-    margin-left: 54px;
-    margin-right: 54px;
-    border-radius: 23px;
-    background-color: aquamarine;
+  .genre-image {
+    padding: 0;
+    width: 100%;
   }
 
   .community {
     height: 600px;
-    width: 100%;
     background-image: url(/Images/Community.png);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
-  .header-background {
-    background-color: #333;
-    width: 181px;
-    height: 41px;
-    opacity: 0.6;
-    position: relative;
-    top: 20em;
-    left: 15em;
+  .community-content {
+    margin: 0 auto;
+    max-width: 1110px;
   }
 
   .community-header {
     color: #fff;
     font-weight: 700;
-    position: absolute;
-    justify-content: center;
-  }
-
-  .text-background {
-    background-color: #333;
-    width: 500px;
-    height: 70px;
-    opacity: 0.6;
-    position: relative;
-    top: 25em;
-    left: 15em;
+    font-size: 2rem;
   }
 
   .community-text {
     color: #fff;
     width: 450px;
-    position: absolute;
+    font-size: 1.1rem;
   }
 
   .carusel {
@@ -413,10 +466,7 @@ body {
   }
 
   .footer {
-    height: 286px;
-    width: 100%;
-    margin-top: 125px;
-    border: 1px solid #666;
+    margin-top: 4rem;
     background-color: #e5e5e5;
   }
 }

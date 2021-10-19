@@ -23,13 +23,20 @@
   <body>
     <header class="header">
       <div class="header-content">
+        <div class="header-section mobile-only">
+          <label for="search-icon"> <i class="fas fa-search"></i> </label>
+          <input type="checkbox" id="search-icon" />
+          <div class="search-mobile">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
         <div class="header-section">
           <span class="logo">
             <a href="/"
               ><img src="./Images/GameHub_Logo 1.png" alt="gamehub logo" /></a
           ></span>
         </div>
-        <div class="header-section">
+        <div class="header-section desktop-only">
           <div class="dropdown">
             <label class="store-menu-label" for="store-menu">Store </label>
             <input id="store-menu" type="checkbox" />
@@ -51,13 +58,18 @@
           <a href="contact.html">Contact</a>
           <a href="help.html">Help</a>
         </div>
-        <div class="header-section">
+        <div class="header-section desktop-only">
           <div class="search">
             <input type="text" placeholder="Search" />
           </div>
         </div>
         <div class="header-section">
-          <a href="profile.html" class="profile"><i class="fas fa-user"></i></a>
+          <a href="profile.html" class="profile desktop-only"
+            ><i class="fas fa-user"></i
+          ></a>
+          <label class="hamburger-menu mobile-only"
+            ><i class="fas fa-bars"></i
+          ></label>
           <a href="shoppingcart.html" class="cart"
             ><i class="fas fa-shopping-cart"></i
           ></a>
@@ -66,39 +78,50 @@
     </header>
     <main>
       <div class="hero-banner">
-        <div class="big-logo"></div>
+        <div class="overlay"></div>
+        <img src="/Images/Desktop-logo.png" alt="Gamehub" class="big-logo" />
       </div>
       <section class="section">
+        <h1 class="main-title">Browse by genre</h1>
         <section class="container">
           <div class="genre">
-            <img src="./Images/Genre1.png" alt="action" />
+            <img src="./Images/Genre1.png" alt="action" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Action</h4>
+              <a href="https://vg.no" class="genre-button">View more</a>
+            </div>
           </div>
           <div class="genre">
-            <img src="./Images/Genre2.png" alt="racing" />
+            <img src="./Images/Genre2.png" alt="racing" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Racing</h4>
+              <a href="https://vg.no" class="genre-button">View more</a>
+            </div>
           </div>
           <div class="genre">
-            <img src="./Images/Genre3.png" alt="sport" />
+            <img src="./Images/Genre3.png" alt="sport" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Sport</h4>
+              <a href="https://vg.no" class="genre-button">View more</a>
+            </div>
           </div>
           <div class="genre">
-            <img src="./Images/Genre4.png" alt="rpg" />
+            <img src="./Images/Genre4.png" alt="rpg" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">RPG</h4>
+              <a href="https://vg.no" class="genre-button">View more</a>
+            </div>
           </div>
         </section>
-        <section class="container">
-          <div class="button">button</div>
-          <div class="button">button</div>
-          <div class="button">button</div>
-          <div class="button">button</div>
-        </section>
+        <section class="container"></section>
       </section>
       <div class="community">
-        <div class="community-header">
-          <h2>Community</h2>
-          <div class="header-background"></div>
-        </div>
-        <div class="community-text">
-          Join the GameHub community today, and pre-ordre, buy, and sell games
-          to other gaming-lovers from all around the globe.
-          <div class="text-background"></div>
+        <div class="community-content">
+          <h2 class="community-header">Community</h2>
+          <p class="community-text">
+            Join the GameHub community today, and pre-ordre, buy, and sell games
+            to other gaming-lovers from all around the globe.
+          </p>
         </div>
       </div>
       <section class="section">
