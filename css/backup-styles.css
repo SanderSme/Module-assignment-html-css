@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  * {
+    font-family: "Exo 2", sans-serif;
+  }
+  
+  .section {
+    background-color: #f2f2f2;
+    margin: 0px auto;
+    max-width: 390px;
+  }
+  
+  .header {
+    height: 48px;
+    background: #fff;
+    border: 1px solid #666;
+  }
+  
+  .header-content {
+    max-width: 1110px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    flex-direction: column;
+    width: 162px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0.5em;
+    box-shadow: 0px 2px 5px 1px #00000020;
+    border-radius: 0 0 0.2em 0.2em;
+    top: 35px;
+  }
+  
+  .dropdown-menu li {
+    margin: 0.5em 0;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #7a778c;
+    text-decoration: underline;
+  }
+  
+  .store-menu-label {
+    cursor: pointer;
+  }
+  
+  .store-menu-label:hover {
+    text-decoration: underline;
+    color: #7a778c;
+  }
+  
+  #store-menu {
+    display: none;
+  }
+  
+  #store-menu:checked ~ .dropdown-menu {
+    display: flex;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-top: 4px;
+  }
+  
+  .cart {
+    margin-left: 3em;
+  }
+  
+  .header-section > a {
+    margin-left: 3em;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .header-section > a:hover {
+    color: #7a778c;
+    text-decoration: underline;
+  }
+  
+  .hero-banner {
+    height: 420px;
+    width: 100%;
+    background-image: url(/Images/Hero-banner-app.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .big-logo {
+    height: 153px;
+    width: 203px;
+    background-color: #c4c4c4;
+    border-radius: 110%;
+    opacity: 0.4;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .genre {
+    height: 117px;
+    width: 117px;
+    margin-top: 151px;
+  }
+  
+  .button {
+    height: 72px;
+    width: 148px;
+    margin-top: 98px;
+    margin-bottom: 57px;
+    margin-left: 54px;
+    margin-right: 54px;
+    border-radius: 23px;
+    background-color: aquamarine;
+  }
+  
+  .community {
+    height: 600px;
+    width: 100%;
+    background-image: url(/Images/Community-app.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header-background {
+    background-color: #333;
+    width: 181px;
+    height: 41px;
+    opacity: 0.6;
+    position: relative;
+    top: 20em;
+    left: 15em;
+  }
+  
+  .community-header {
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    justify-content: center;
+  }
+  
+  .text-background {
+    background-color: #333;
+    width: 500px;
+    height: 70px;
+    opacity: 0.6;
+    position: relative;
+    top: 25em;
+    left: 15em;
+  }
+  
+  .community-text {
+    color: #fff;
+    width: 450px;
+    position: absolute;
+  }
+  
+  .carusel {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 184px;
+    background-color: darkgreen;
+  }
+  
+  .game {
+    height: 243px;
+    width: 190px;
+    margin-top: 79px;
+  }
+  
+  .footer {
+    height: 570px;
+    width: 100%;
+    margin-top: 125px;
+    border: 1px solid #666;
+    background-color: #e5e5e5;
+  }
+  
+  .footer-links li {
+    list-style-type: none;
+    color: #333;
+  }
+  
+  @media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+  
+    * {
+      font-family: "Exo 2", sans-serif;
+    }
+  
+    .section {
+      background-color: #f2f2f2;
+      margin: 0px auto;
+      max-width: 1110px;
+    }
+  
+    .section2 {
+      margin: 0px auto;
+      max-width: 1110px;
+    }
+  
+    .header {
+      height: 48px;
+      background: #fff;
+      border: 1px solid #666;
+    }
+  
+    .header-content {
+      max-width: 1110px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .header-section {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .dropdown {
+      position: relative;
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      display: none;
+      list-style-type: none;
+      flex-direction: column;
+      width: 162px;
+      background-color: #fff;
+      margin: 0;
+      padding: 0.5em;
+      box-shadow: 0px 2px 5px 1px #00000020;
+      border-radius: 0 0 0.2em 0.2em;
+      top: 35px;
+    }
+  
+    .dropdown-menu li {
+      margin: 0.5em 0;
+    }
+  
+    .dropdown-menu li a {
+      text-decoration: none;
+      color: #000;
+    }
+  
+    .dropdown-menu li a:hover {
+      color: #7a778c;
+      text-decoration: underline;
+    }
+  
+    .store-menu-label {
+      cursor: pointer;
+    }
+  
+    .store-menu-label:hover {
+      text-decoration: underline;
+      color: #7a778c;
+    }
+  
+    #store-menu {
+      display: none;
+    }
+  
+    #store-menu:checked ~ .dropdown-menu {
+      display: flex;
+    }
+  
+    .logo img {
+      height: 40px;
+      margin-top: 4px;
+    }
+  
+    .cart {
+      margin-left: 3em;
+    }
+  
+    .header-section > a {
+      margin-left: 3em;
+      color: #000;
+      text-decoration: none;
+    }
+  
+    .header-section > a:hover {
+      color: #7a778c;
+      text-decoration: underline;
+    }
+  
+    .hero-banner {
+      height: 420px;
+      width: 100%;
+      background-image: url(/Images/hero-banner.png);
+      background-position: center;
+    }
+  
+    .big-logo {
+      height: 293px;
+      width: 390px;
+      background-color: #c4c4c4;
+      border-radius: 110%;
+      opacity: 0.4;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .genre {
+      height: 255px;
+      width: 255px;
+      margin-top: 151px;
+    }
+  
+    .button {
+      height: 72px;
+      width: 148px;
+      margin-top: 98px;
+      margin-bottom: 57px;
+      margin-left: 54px;
+      margin-right: 54px;
+      border-radius: 23px;
+      background-color: aquamarine;
+    }
+  
+    .community {
+      height: 600px;
+      width: 100%;
+      background-image: url(/Images/Community.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .header-background {
+      background-color: #333;
+      width: 181px;
+      height: 41px;
+      opacity: 0.6;
+      position: relative;
+      top: 20em;
+      left: 15em;
+    }
+  
+    .community-header {
+      color: #fff;
+      font-weight: 700;
+      position: absolute;
+      justify-content: center;
+    }
+  
+    .text-background {
+      background-color: #333;
+      width: 500px;
+      height: 70px;
+      opacity: 0.6;
+      position: relative;
+      top: 25em;
+      left: 15em;
+    }
+  
+    .community-text {
+      color: #fff;
+      width: 450px;
+      position: absolute;
+    }
+  
+    .carusel {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      margin-top: 184px;
+      background-color: darkgreen;
+    }
+  
+    .game {
+      height: 243px;
+      width: 190px;
+      margin-top: 79px;
+    }
+  
+    .footer {
+      height: 286px;
+      width: 100%;
+      margin-top: 125px;
+      border: 1px solid #666;
+      background-color: #e5e5e5;
+    }
+  }
