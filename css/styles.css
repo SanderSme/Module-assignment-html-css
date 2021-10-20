@@ -339,12 +339,6 @@ h1 {
     max-width: 1110px;
   }
 
-  .header {
-    height: 48px;
-    background: #fff;
-    border: 1px solid #666;
-  }
-
   .header-content {
     max-width: 1110px;
     margin: 0px auto;
