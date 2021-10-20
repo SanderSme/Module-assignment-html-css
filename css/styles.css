@@ -66,6 +66,7 @@ h1 {
 
 .hamburger-menu {
   position: absolute;
+  margin-top: 0.15em;
 }
 
 .hamburger-menu-dropdown {
@@ -328,7 +329,6 @@ h1 {
 
 @media screen and (min-width: 767px) {
   .section {
-    background-color: #f2f2f2;
     margin: 0px auto;
     max-width: 1110px;
     padding: 0;
@@ -348,28 +348,23 @@ h1 {
   .header-content {
     max-width: 1110px;
     margin: 0px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 0;
-  }
-
-  .header-section {
-    display: flex;
-    flex-direction: row;
   }
 
   .mobile-only {
     display: none;
   }
 
-  .desktop-only {
-    display: flex;
+  #hamburger-menu {
+    display: none;
   }
 
-  .dropdown {
-    position: relative;
+  .hamburger-menu-dropdown {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
   }
 
   .dropdown-menu {
@@ -391,64 +386,12 @@ h1 {
     margin: 0.5em 0;
   }
 
-  .dropdown-menu li a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  .dropdown-menu li a:hover {
-    color: #7a778c;
-    text-decoration: underline;
-  }
-
-  .store-menu-label {
-    cursor: pointer;
-  }
-
-  #hamburger-menu {
-    display: none;
-  }
-
-  .hamburger-menu-dropdown {
-    display: none;
-  }
-
-  .store-menu-label:hover {
-    text-decoration: underline;
-    color: #7a778c;
-  }
-
-  #store-menu {
-    display: none;
-  }
-
-  #store-menu:checked ~ .dropdown-menu {
-    display: flex;
-  }
-
   .logo img {
-    height: 40px;
-    margin-top: 4px;
     margin-left: 0;
-  }
-
-  .cart {
-    margin-left: 3em;
   }
 
   .profile {
     padding: 0.15em;
-  }
-
-  .header-section > a {
-    margin-left: 3em;
-    color: #000;
-    text-decoration: none;
-  }
-
-  .header-section > a:hover {
-    color: #7a778c;
-    text-decoration: underline;
   }
 
   .hero-banner {
@@ -472,14 +415,11 @@ h1 {
   }
 
   .container {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .genre {
     flex-direction: column;
-    align-items: center;
   }
 
   .genre-image {
@@ -492,21 +432,18 @@ h1 {
     background-image: url(/Images/Community.png);
   }
 
-  .community-content {
-    margin: 0 auto;
-    max-width: 1110px;
-  }
-
   .community-header {
-    color: #fff;
-    font-weight: 700;
     font-size: 2rem;
   }
 
   .community-text {
-    color: #fff;
     width: 450px;
     font-size: 1.1rem;
+  }
+
+  .community-content {
+    margin: 0 auto;
+    max-width: 1110px;
   }
 
   .game-heading {
@@ -523,12 +460,7 @@ h1 {
     width: 100%;
   }
 
-  .assassin {
-    display: flex;
-  }
-
   .footer {
     margin-top: 4rem;
-    background-color: #e5e5e5;
   }
 }
