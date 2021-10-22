@@ -91,6 +91,16 @@ h1 {
 .app-navigation-drawer li {
   padding: 1em;
 }
+.app-navigation-drawer a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #333;
+}
+
+.app-navigation-drawer a:hover {
+  text-decoration: underline;
+  color: #7a778c;
+}
 
 #hamburger-menu:checked ~ .app-navigation-drawer {
   display: flex;
@@ -325,6 +335,17 @@ h1 {
 
 .footer-links {
   padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #7a778c;
 }
 
 @media screen and (min-width: 767px) {
