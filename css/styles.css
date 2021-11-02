@@ -19,7 +19,7 @@ h1 {
 }
 
 .header {
-  height: 48px;
+  height: 68px;
   background: #fff;
   border: 1px solid #666;
 }
@@ -151,7 +151,7 @@ h1 {
 }
 
 .logo img {
-  height: 40px;
+  width: 80px;
   margin-top: 4px;
   margin-left: 3.5rem;
 }
@@ -394,7 +394,7 @@ h1 {
     padding: 0.5em;
     box-shadow: 0px 2px 5px 1px #00000020;
     border-radius: 0 0 0.2em 0.2em;
-    top: 31px;
+    top: 46px;
   }
 
   .dropdown-menu li {
