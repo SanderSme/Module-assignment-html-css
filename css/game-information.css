@@ -12,10 +12,6 @@ h1 {
   color: #1d2540;
 }
 
-h2 {
-  color: #333;
-}
-
 .section {
   background-color: #f2f2f2;
   max-width: 390px;
@@ -187,95 +183,46 @@ h2 {
   border-bottom: 1px solid #33333370;
 }
 
-.title {
-  margin: 6px 0 6px 0;
-}
-
-.contact {
-  font-size: 1.1em;
-  height: 37px;
-  width: 100%;
-  border: 1px solid;
-  background-color: #fff;
-  margin: 0;
-  text-align: center;
-  padding: 8px 0;
-}
-.name {
-  width: 170px;
-}
-
-.names {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.profile-pic {
-  display: none;
-}
-
-.mobile-profile-pic {
-  background-image: url(../Images/profile-pic.png);
-  width: 150px;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-  margin: 0 auto;
-}
-
-.profile-pic-container {
-  text-align: center;
-}
-
-.edit-button {
-  padding: 1.5rem;
-  border-radius: 23px;
-  background-color: #1d2540;
-  color: #fff;
-  text-decoration: none;
-}
-
-.container2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.assassin {
-  display: none;
-}
-
 .game {
-  margin: 0 2em;
-}
-
-.game-image {
-  height: 150px;
-}
-
-.game-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.game-button {
-  padding: 1.2rem;
-  border-radius: 23px;
-  background-color: #1d2540;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 2rem;
+.game-title {
+  text-align: center;
 }
 
-.information-button {
+.game-content {
+  max-width: 269px;
+}
+
+.game-sellingpoints {
+  border-bottom: 1px solid #333;
+  padding-top: 1em;
+  display: flex;
   width: 100%;
-  text-align: center;
-  margin-top: 3em;
-  margin-bottom: 4em;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add-to-cart-button {
+  padding: 1.5rem;
+  border-radius: 23px;
+  background-color: #01403a;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer {
@@ -368,125 +315,37 @@ h2 {
   }
 
   .main-title {
-    margin-top: 58px;
     text-align: left;
-    font-size: 2.4rem;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .title {
-    margin: 6px 0 6px 0;
-  }
-
-  .contact {
-    font-size: 1.5em;
-    height: 56px;
-    width: 470px;
-    border: 1px solid;
-    background-color: #fff;
-    margin: 0;
-    text-align: center;
-    padding: 12px 0;
-  }
-  .name {
-    width: 224px;
-  }
-
-  .section-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .profile-pic-container {
-    order: 2;
-  }
-
-  .mobile-profile-pic {
-    display: none;
-  }
-
-  .profile-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .profile-pic {
-    display: block;
-    width: 100%;
-    border-radius: 0;
-    margin: 0;
-  }
-
-  .password {
-    margin-bottom: 4.12em;
-  }
-
-  .edit-button {
-    padding: 1.5rem;
-    border-radius: 23px;
-    background-color: #1d2540;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .information-button {
-    margin: 0;
-  }
-
-  .game-heading {
-    margin-top: 32px;
-    text-align: left;
-    padding: 1em 0;
   }
 
   .game {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 1em 0 0 0;
-  }
-
-  .game-image {
-    height: 243px;
-  }
-
-  .game-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
 
   .game-title {
-    font-size: 1.5rem;
-    font-weight: 500;
+    text-align: left;
   }
 
-  .game-button {
-    padding: 1.5rem;
-    border-radius: 23px;
-    background-color: #1d2540;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 2rem;
+  .game-content {
+    max-width: 760px;
+  }
+  .game-image {
+    height: 327px;
   }
 
-  .container2 {
-    display: flex;
+  .game-sellingpoints {
+    border-bottom: 1px solid #333;
+    padding-top: 1em;
+  }
+
+  .add-to-cart-button {
+    margin-top: 5em;
+  }
+
+  .container {
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .footer {
