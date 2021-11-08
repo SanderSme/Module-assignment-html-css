@@ -17,8 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/profile.css" />
-    <title>Profile page</title>
+    <link rel="stylesheet" href="./css/presignin.css" />
+    <title>Gamehub Homepage</title>
   </head>
   <body>
     <header class="header">
@@ -64,9 +64,7 @@
           </div>
         </div>
         <div class="header-section">
-          <a href="profile.html" class="profile desktop-only"
-            ><i class="fas fa-user"></i
-          ></a>
+          <a href="signup.html" class="profile desktop-only">Sign in</a>
           <label class="hamburger-menu mobile-only"
             ><i class="fas fa-bars"></i
           ></label>
@@ -74,7 +72,9 @@
             <input id="hamburger-menu" type="checkbox" />
             <ul class="app-navigation-drawer mobile-only">
               <h3>Menu</h3>
-              <li><a href="profile.html">Profile</a></li>
+              <li>
+                <a href="signup.html" class="signin-button">Sign in</a>
+              </li>
               <li><a href="games.html#new">New games</a></li>
               <li><a href="games.html#pre-owned">Pre-owned games</a></li>
               <li><a href="games.html">All games</a></li>
@@ -93,98 +93,56 @@
       </div>
     </header>
     <main>
+      <div class="hero-banner">
+        <div class="overlay"></div>
+        <img src="/Images/Desktop-logo.png" alt="Gamehub" class="big-logo" />
+      </div>
       <section class="section">
-        <h1 class="main-title">Profile</h1>
-        <div class="section-content">
-          <div class="information profile-pic-container">
-            <p class="title">Picture:</p>
-            <div class="mobile-profile-pic"></div>
-            <img
-              src="./Images/profile-pic.png"
-              alt="Profile picture"
-              class="profile-pic"
-            />
-          </div>
-          <div class="profile-info">
-            <section class="container">
-              <div class="information">
-                <p class="title">E-Mail:</p>
-                <p class="contact">johndoe@johndoe.com</p>
-              </div>
-              <div class="names">
-                <div class="information">
-                  <p class="title">First name:</p>
-                  <p class="contact name">John</p>
-                </div>
-                <div class="information">
-                  <p class="title">Last name:</p>
-                  <p class="contact name">Doe</p>
-                </div>
-              </div>
-              <div class="information">
-                <p class="title">Phone-number:</p>
-                <p class="contact">+4722222222</p>
-              </div>
-              <div class="information password">
-                <p class="title">Password:</p>
-                <p class="contact">************************</p>
-              </div>
-              <div class="buttons">
-                <div class="information-button">
-                  <a href="edit-profile.html" class="edit-button"
-                    >Edit profile</a
-                  >
-                </div>
-                <div class="information-button">
-                  <a href="presignin.html" class="edit-button">Sign out</a>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <h1 class="main-title">History</h1>
-        <h2>Bought</h2>
-        <section class="container2">
-          <div class="game">
-            <img
-              src="./Images/Superduper.png"
-              alt="superduper"
-              class="game-image"
-            />
-            <div class="game-content">
-              <h4 class="game-title">SuperDuper</h4>
-              <a href="game-information.html#superduper" class="game-button"
-                >Read more</a
-              >
+        <h1 class="main-title">Browse by genre</h1>
+        <section class="container">
+          <div class="genre">
+            <img src="./Images/Genre1.png" alt="action" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Action</h4>
+              <a href="games.html#action" class="genre-button">View more</a>
             </div>
           </div>
-          <div class="game">
-            <img src="./Images/Racing.png" alt="racing" class="game-image" />
-            <div class="game-content">
-              <h4 class="game-title">Racing</h4>
-              <a href="game-information.html#racing" class="game-button"
-                >Read more</a
-              >
+          <div class="genre">
+            <img src="./Images/Genre2.png" alt="racing" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Racing</h4>
+              <a href="games.html#racing" class="genre-button">View more</a>
             </div>
           </div>
-          <div class="game assassin">
-            <img
-              src="./Images/Assassin.png"
-              alt="assassin"
-              class="game-image"
-            />
-            <div class="game-content">
-              <h4 class="game-title">Assassin</h4>
-              <a href="game-information.html#assassion" class="game-button"
-                >Read more</a
-              >
+          <div class="genre">
+            <img src="./Images/Genre3.png" alt="sport" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">Sport</h4>
+              <a href="games.html#sport" class="genre-button">View more</a>
+            </div>
+          </div>
+          <div class="genre">
+            <img src="./Images/Genre4.png" alt="rpg" class="genre-image" />
+            <div class="genre-content">
+              <h4 class="genre-title">RPG</h4>
+              <a href="games.html#rpg" class="genre-button">View more</a>
             </div>
           </div>
         </section>
-        <h2>Sold</h2>
-        <section class="container2">
+        <section class="container"></section>
+      </section>
+      <div class="community">
+        <div class="community-content">
+          <h2 class="community-header">Community</h2>
+          <p class="community-text">
+            Join the GameHub community today, and pre-ordre, buy, and sell games
+            to other gaming-lovers from all around the globe.
+          </p>
+        </div>
+      </div>
+      <section class="section">
+        <h2 class="game-heading">Best sellers</h2>
+        <section class="container">
           <div class="game">
             <img
               src="./Images/Superduper.png"
@@ -207,7 +165,7 @@
               >
             </div>
           </div>
-          <div class="game assassin">
+          <div class="game">
             <img
               src="./Images/Assassin.png"
               alt="assassin"
@@ -225,7 +183,7 @@
     </main>
     <footer class="footer">
       <div class="section2">
-        <div class="footer-container">
+        <div class="container">
           <div class="learn-more">
             <h2 class="learn-more-header">Learn more</h2>
             <ul class="footer-links">

@@ -217,6 +217,13 @@ h1 {
   color: #fff;
   text-decoration: none;
   margin-top: 2em;
+  border: 5px solid transparent;
+}
+
+.add-to-cart-button:hover {
+  border: 5px solid #01403a;
+  color: #01403a;
+  background-color: #f2f2f2;
 }
 
 .container {
